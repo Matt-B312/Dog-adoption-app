@@ -1,7 +1,6 @@
-const Flight = require('../models/flight');
-const Ticket = require('../models/ticket');
+
 const Pet = require('../models/pets');
-const { show } = require('./flights');
+
 const Adoption = require('../models/adoptions');
 const User = require('../models/User');
 

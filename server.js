@@ -46,17 +46,14 @@ app.use(function(req, res, next){
 
 app.use(methodOverRide('_method'))
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var flightsRouter = require('./routes/flights');
-var ticketsRouter = require('./routes/tickets');
+
+
 var petRouter = require('./routes/pet');
 var authRouter = require('./routes/auth');
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/', flightsRouter);
-app.use('/', ticketsRouter);
+app.get('/', function(req, res) {
+  res.redirect('/pets/index');
+})
 app.use('/', petRouter);
 app.use('/', authRouter);
 
