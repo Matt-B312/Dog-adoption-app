@@ -13,4 +13,6 @@ router.get('/flights/:id', flightsCtrl.show)
 
 router.post('/flights/:id/destinations', flightsCtrl.addDestination)
 
+router.get
+
 module.exports = router;

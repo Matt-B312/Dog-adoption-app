@@ -32,6 +32,10 @@ async function addDestination(req, res) {
     res.redirect(`/flights/${req.params.id}`)
 }
 
+function view(req, res) {
+    
+}
+
   module.exports = {
       index,
       new: newFlight,

@@ -1,0 +1,45 @@
+<%- include('../partials/header') %>
+
+<h2> Adoption Form </h2>
+<hr class="hr2">
+  <br>
+
+<div class="form">
+<form id="add-pet-form" action="/pets/adoptions" method="POST">
+  <label><h3>Age:</h3></label>
+  <input class="form-control" type="number" name="age">
+  <br>
+  <label><h3>Address:</h3></label>
+  <input class="form-control" type="text" name="breed">
+  <br>
+  <label><h3>City/state/Zip:</h3></label>
+  <input class="form-control" type="text" name="characteristics">
+  <br>
+  <label><h3>Phone Number:</h3></label>
+  <input class="form-control" type="text" name="coatLength">
+  <br>
+  <label><h3>Person of Reference and Phone #:</h3></label>
+  <input class="form-control" type="text" name="health">
+  <br>
+  <br>
+  <label><h3>Do You Live In A:</h3></label>
+  <select name="house">
+    <option value="house">House</option>
+    <option value="apartment">Apartment</option>
+    <option value="condo">Condo</option>
+    <option value="mobileHome">Mobile Home</option>
+  </select>
+  <hr class="hr1">
+  <br>
+  <br>
+  <label><h3>Adoption Fee:</h3></label>
+  <input class="form-control" type="number" name="adoptionFee">
+  <br>
+  <label><h3>Who Will Be The Primary Caregiver:</h3></label>
+  <input class="form-control" type="text" name="image">
+  <br>
+  <input type="submit" class="btn btn-primary mb-3" value="Add Pet">
+</form>
+</div>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,62 @@
+<h1>Edit Pet Details</h1>
+
+<form method="post" action="/pets/update?_method=PUT">
+
+    <div>
+        <label>Name</label>
+        <input type="text" name="name" value="<%= pet.name%>">
+    </div>
+
+    <div>
+        <label>Age</label>
+        <input type="text" name="age" value="<%= pet.age%>">
+    </div>
+
+    <div>
+        <label>Breed</label>
+        <input type="text" name="breed" value="<%= pet.breed%>">
+    </div>
+
+    <div>
+        <label>Characteristics</label>
+        <input type="text" name="characteristics" value="<%= pet.characteristics%>">
+    </div>
+
+    <div>
+        <label>Coat Length</label>
+        <input type="text" name="coatLength" value="<%= pet.coatLength%>">
+    </div>
+
+    <div>
+        <label>House Trained</label>
+        <select name="houseTrained">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+    </div>
+
+    <div>
+        <label>Health</label>
+        <input type="text" name="health" value="<%= pet.health%>">
+    </div>
+
+    <div>
+        <label>Good In Home</label>
+        <input type="text" name="goodInHome" value="<%= pet.goodInHome%>">
+    </div>
+
+    <div>
+        <label>Adoption Fee</label>
+        <input type="text" name="adoptionFee" value="<%= pet.adoptionFee%>">
+    </div>
+
+    <div>
+        <label>Image</label>
+        <input type="text" name="image" value="<%= pet.image%>">
+    </div>
+
+    <input type="hidden" name="id" value="<%= pet._id%>">
+
+    <button type="submit">Edit Pet Details</button>
+
+    </form>

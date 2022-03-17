@@ -1,0 +1,73 @@
+<%- include('../partials/header') %>
+<br>
+
+<img class='showimg' src= "<%= pet.image %>" height="240px" width="356px">
+
+<div class="form-control form-control-sm">
+    <strong>Name:</strong> <%= pet.name %>
+</div>
+
+<div class="form-control form-control-sm">
+    <strong>Age:</strong> <%= pet.age %>
+</div>
+
+<div class="form-control form-control-sm">
+    <strong>Breed:</strong> <%= pet.breed %>
+</div>
+
+<div class="form-control form-control-sm">
+    <strong>Characteristics:</strong> <%= pet.characteristics %>
+</div>
+
+<div class="form-control form-control-sm">
+    <strong>Length:</strong> <%= pet.coatLength %>
+</div>
+
+<div class="form-control form-control-sm">
+    <strong>House Trained:</strong> 
+    <% if(pet.houseTrained) {%>
+        Yes
+        <%}else{%>
+        No
+       <% } %>
+       
+</div>
+
+<div class="form-control form-control-sm">
+    <strong>Health:</strong>  <%= pet.health %>
+    
+</div>
+
+<div class="form-control form-control-sm">
+    <strong>Good In Home:</strong> 
+    <% if(pet.goodInHome) {%>
+        Yes
+        <%}else{%>
+        No
+       <% } %>
+</div>
+
+<div class="form-control form-control-sm">
+    <stong>Adoption Fee:</stong> <%= pet.adoptionFee %>
+</div>
+<br>
+<hr class="hr2">
+<br>
+<br>
+<a href="/pets/adoption/<%= pet.id%>"><button type="button" class="glow-on-hover">Adopte Me</button></a>
+<br>
+<br>
+<br>
+<div>
+    <form action="/pets/delete/<%= pet.id%>?_method=delete" method="post">
+        <button type="submit">Delete</button>
+    </form>
+</div>
+<br>
+<br>
+
+<a href="/pets/edit/<%= pet.id%>"><button type="button">Edit</button></a>
+
+
+
+<%- include('../partials/footer') %>

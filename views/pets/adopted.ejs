@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+<br>
+<br>
+<h1>Dogs You've Adopted</h1>
+
+<% if(pets.length==0) {%>
+<h1>No pets to show</h1>
+<%}else{%> 
+  <% pets.forEach((pet) => { %>
+    <div class="dogs">
+      <a href="/pets/show?id=<%= pet.id%>"><img src="<%= pet.image%>"></a>
+      <h3><%= pet.name%></h3>
+    </div>
+    <br>
+    <% }) %>
+<% } %>
+
+<%- include('../partials/footer') %>

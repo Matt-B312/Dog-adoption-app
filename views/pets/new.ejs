@@ -1,0 +1,49 @@
+<%- include('../partials/header') %>
+
+<div class="form">
+<form id="add-pet-form" action="/pets/add" method="POST">
+  <label><h3>Name:</h3></label>
+  <input class="form-control" type="text" name="name">
+  <br>
+  <label><h3>Age:</h3></label>
+  <input class="form-control" type="number" name="age">
+  <br>
+  <label><h3>Breed:</h3></label>
+  <input class="form-control" type="text" name="breed">
+  <br>
+  <label><h3>characteristics:</h3></label>
+  <input class="form-control" type="text" name="characteristics">
+  <br>
+  <label><h3>Coat Length:</h3></label>
+  <input class="form-control" type="text" name="coatLength">
+  <br>
+  <br>
+  <label><h3>House Trained:</h3></label>
+  <select name="houseTrained">
+    <option value="true">Yes</option>
+    <option value="false">No</option>
+  </select>
+  <hr class="hr1">
+  <br>
+  <label><h3>Health:</h3></label>
+  <input class="form-control" type="text" name="health">
+  <br>
+  <br>
+  <label><h3>Good In Home:</h3></label>
+  <select name="goodInHome">
+    <option value="true">Yes</option>
+    <option value="false">No</option>
+  </select>
+  <hr class="hr1">
+  <br>
+  <label><h3>Adoption Fee:</h3></label>
+  <input class="form-control" type="number" name="adoptionFee">
+  <br>
+  <label><h3>Image:</h3></label>
+  <input class="form-control" type="text" name="image">
+  <br>
+  <input type="submit" class="btn btn-primary mb-3" value="Add Pet">
+</form>
+</div>
+
+<%- include('../partials/footer') %>
