@@ -2,6 +2,9 @@
 <br>
 <br>
 <h1>Dogs Near you</h1>
+<br>
+<hr class="hr2">
+<br>
 
 <% if(pets.length==0) {%>
 <h1>No pets to show</h1>
@@ -9,8 +12,12 @@
   <% pets.forEach((pet) => { %>
     <div class="dogs">
       <a href="/pets/show?id=<%= pet.id%>"><img src="<%= pet.image%>"></a>
-      <h3><%= pet.name%></h3>
+      
     </div>
+    <br>
+    
+    <h3 class="threeD"><%= pet.name%></h3>
+    
     <br>
     <% }) %>
 <% } %>

@@ -1,10 +1,13 @@
 <%- include('../partials/header') %>
-<br>
+
 <br>
 <h1>Dogs You've Adopted</h1>
+<br>
+<hr class="hr2">
+<br>
 
 <% if(pets.length==0) {%>
-<h1>No pets to show</h1>
+<h2>No pets to show</h2>
 <%}else{%> 
   <% pets.forEach((pet) => { %>
     <div class="dogs">
