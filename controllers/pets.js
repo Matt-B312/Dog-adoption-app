@@ -8,6 +8,10 @@ const User = require('../models/User');
 
 async function index(req, res) {
     let pets = await Pet.find({})
+    // console.log('user', req.user);
+    // let user = await User.findById(req.user.id)
+    // let adopted = user.petsAdopted
+    // console.log(pets.filter(n => !adopted.includes(n)))
     res.render('pets/index', {pets, currentUser: req.user});
   }
 
