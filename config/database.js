@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-
-mongoose.connect('mongodb+srv://Matt-B312:Matt2038@mongodbcluster.wejl1.mongodb.net/mongoose-flights?retryWrites=true&w=majority',
+require('dotenv').config()
+mongoose.connect(process.env.databaseurl,
 { useNewUrlParser: true}
 );
 
