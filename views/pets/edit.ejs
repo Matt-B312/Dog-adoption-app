@@ -1,62 +1,78 @@
+<%- include('../partials/header') %>
+
 <h1>Edit Pet Details</h1>
-
-<form method="post" action="/pets/update?_method=PUT">
+<div class="form">
+<form id="add-pet-form" method="post" action="/pets/update?_method=PUT">
 
     <div>
-        <label>Name</label>
-        <input type="text" name="name" value="<%= pet.name%>">
+        <label><h3>Name</h3></label>
+        <input class="form-control" type="text" name="name" value="<%= pet.name%>">
     </div>
+    <br>
 
     <div>
-        <label>Age</label>
-        <input type="text" name="age" value="<%= pet.age%>">
+        <label><h3>Age</h3></label>
+        <input class="form-control" type="text" name="age" value="<%= pet.age%>">
     </div>
+    <br>
 
     <div>
-        <label>Breed</label>
-        <input type="text" name="breed" value="<%= pet.breed%>">
+        <label><h3>Breed</h3></label>
+        <input class="form-control" type="text" name="breed" value="<%= pet.breed%>">
     </div>
+    <br>
 
     <div>
-        <label>Characteristics</label>
-        <input type="text" name="characteristics" value="<%= pet.characteristics%>">
+        <label><h3>Characteristics</h3></label>
+        <input class="form-control" type="text" name="characteristics" value="<%= pet.characteristics%>">
     </div>
+    <br>
 
     <div>
-        <label>Coat Length</label>
-        <input type="text" name="coatLength" value="<%= pet.coatLength%>">
+        <label><h3>Length</h3></label>
+        <input class="form-control" type="text" name="coatLength" value="<%= pet.coatLength%>">
     </div>
+    <br>
 
     <div>
-        <label>House Trained</label>
+        <label><h3>House Trained</h3></label>
         <select name="houseTrained">
             <option value="true">Yes</option>
             <option value="false">No</option>
           </select>
     </div>
+    <hr class="hr1">
+    <br>
 
     <div>
-        <label>Health</label>
-        <input type="text" name="health" value="<%= pet.health%>">
+        <label><h3>Health</h3></label>
+        <input class="form-control" type="text" name="health" value="<%= pet.health%>">
     </div>
+    <br>
 
     <div>
-        <label>Good In Home</label>
-        <input type="text" name="goodInHome" value="<%= pet.goodInHome%>">
+        <label><h3>Good In Home</h3></label>
+        <input class="form-control" type="text" name="goodInHome" value="<%= pet.goodInHome%>">
     </div>
+    <br>
 
     <div>
-        <label>Adoption Fee</label>
-        <input type="text" name="adoptionFee" value="<%= pet.adoptionFee%>">
+        <label><h3>Adoption Fee</h3></label>
+        <input class="form-control" type="text" name="adoptionFee" value="<%= pet.adoptionFee%>">
     </div>
+    <br>
 
     <div>
-        <label>Image</label>
-        <input type="text" name="image" value="<%= pet.image%>">
+        <label><h3>Image</h3></label>
+        <input class="form-control" type="text" name="image" value="<%= pet.image%>">
     </div>
+    <br>
 
     <input type="hidden" name="id" value="<%= pet._id%>">
 
-    <button type="submit">Edit Pet Details</button>
+    <button type="submit" class="glow-on-hover">Edit Pet Details</button>
 
     </form>
+</div>
+
+    <%- include('../partials/footer') %>
