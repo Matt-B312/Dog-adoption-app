@@ -11,8 +11,8 @@ and find out fun facts and details about them. Then when you're ready simply fil
 
 ## Screen Shots
 
-* ![alt text](https://?raw=true)
-* ![alt text](https://?raw=true)
+* ![alt text](https://https://github.com/Matt-B312/Project-2/blob/master/screenshots/Screen%20Shot%202022-03-17%20at%207.47.57%20PM.png?raw=true)
+* ![alt text](https://https://github.com/Matt-B312/Project-2/blob/master/screenshots/Screen%20Shot%202022-03-17%20at%207.48.12%20PM.png?raw=true)
 
 
 ## technology used: 
