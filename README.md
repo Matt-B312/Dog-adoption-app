@@ -11,8 +11,8 @@ and find out fun facts and details about them. Then when you're ready simply fil
 
 ## Screen Shots
 
-* ![alt text](https://https://i.imgur.com/oLf8wGu.png)
-* ![alt text](https://https://i.imgur.com/GLfh7tb.png?raw=true)
+* ![alt text](https://i.imgur.com/oLf8wGu.png)
+* ![alt text](https://i.imgur.com/GLfh7tb.png)
 
 
 ## technology used: 
